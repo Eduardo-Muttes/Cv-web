@@ -6,6 +6,8 @@
     <title>Muttes Web Developer</title>
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <!--CSS Custom-->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,7 +16,7 @@
     <div class="container pt-3">
 
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <a class="navbar-brand" href="#"><img src="logos/Logo.png" alt="" style="width: 50px; height: 50px;"> Muttes</a>
+            <a class="navbar-brand" href="index.html"><img src="logos/Logo.png" alt="" style="width: 50px; height: 50px;"> Muttes</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,7 +39,6 @@
     <div class="contenedor">
     <div class="perfilImg">
         <img class="rounded" src="img/eduardo.jpg" alt="foto de Eduardo" style="width: 180px;">        
-        
     </div>
     <div class="presentacion">
         <h1>Hola,</h1>
@@ -51,10 +52,23 @@
         <h3>Gracias por la visita!</h3>
         <p>Sentite libre de explorar el resto de la página</p>
     </section>
-    </div>    
-    
-    </div>  
+    </div> 
 
+    <div class="col-md-12 text-center">  
+    <button  class="btn btn-danger btn-lg" type="button" onclick="document.getElementById('mapaDelTesoro').style.display='flex'" style="margin-bottom: 20px;">Click Aqui!</button>
+    </div> 
+
+    <div class="mapaDelTesoro" id="mapaDelTesoro" style="display: none;">
+      <h2 class="tituloMedieval">Encuentra el tesoro</h2>
+      <p>Haz click en el mapa para buscar el tesoro!</p>
+
+      <img src="img/treasuremap.png" id="mapa" width="400" height="400">
+            
+      <p id="distancia"></p>
+
+
+    </div>
+    </div> <!--End of contenedor-->
     </div> <!--End of .container-->
 
     <!-- Bootstrap JS-->
@@ -64,5 +78,8 @@
 
     <!--Custom JS-->
     <script src="scripts.js"></script>
+    <!--Juego Mapa del Tesoro-->
+    <script src="helpers.js"></script>
+    <script src="mapadeltesoro.js"></script>
 </body>
 </html>
