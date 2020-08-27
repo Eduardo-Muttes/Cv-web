@@ -3,6 +3,9 @@ window.onload = function() {
     selector: '.background',
     maxParticles: 200,
     color: ['#DA0463', '#404B69', '#DBEDF3'],
+    speed: 0.4,
+    minDistance: 30,
+    sizeVariations: 1,
     connectParticles: true
   });
 };
@@ -35,6 +38,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
-
 
