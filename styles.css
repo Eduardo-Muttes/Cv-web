@@ -29,6 +29,7 @@ body {
 }
 /* Mapa del tesoro estilos */
 .mapaDelTesoro {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -36,6 +37,7 @@ body {
   height: 100vh;
   margin-top: 20px;
   padding: 0;
+  
 }
 
 .tituloMedieval {
