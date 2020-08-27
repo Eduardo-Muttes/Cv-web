@@ -4,8 +4,9 @@ body {
   background-color: #464646;
 }
 .contenedor {
+  position: relative;
   color: white;
-  background-color: rgba(4, 2, 10, 0.726);
+  background-color: rgba(4, 2, 10, 0.582);
   background-blend-mode: color-burn;
 }
 .perfilImg {
